@@ -53,3 +53,138 @@ result(95);
 var degree_result = result(deg);
 
 document.write(degree_result);
+
+
+
+
+// let n=20;
+// let t='60'
+// console.log(n+t);
+
+//arrayde olan tek ededlerin cemini tapin:
+// let array=[5,6,7,8,9,32,45,12];
+// let cem=0;
+
+// for (let index = 0; index < array.length; index++) 
+// {
+//     if (array[index]%2!=0) 
+//     {
+//         cem+=array[index];
+//     } 
+// }
+// console.log(cem);
+
+//1:gelen string butun herfleri balaca yada boyukduse true,eks halda false versin
+// let array='abbaS'
+
+// if (array.toUpperCase()===array||array.toLowerCase()===array) {
+//     console.log(true);
+// }
+// else{
+//     console.log(false);
+// }  
+
+//2:func yaziriq,2 ededin ceminin 100 olub-olmadigini ve 2 ededden birinin 100 olub olmadigini yoxla,geriye true cvb qaytarsin.
+// function cem(a,b) 
+// {
+//     if (a+b===100&&a===100||b===100) {
+//         return true;
+//     } else{
+//         return false;
+//     }
+// }
+// console.log(cem(0,100));
+
+///3:kredite goturduyumuz pul ve ayliq(nece ay odemeli) verilir.pul beraber hisselere
+//bolunub her ay verilmelidir.
+
+//let credit
+// function calculator(credit_amount,month) {
+//     let qaliq=credit_amount%month; 
+//     let ayliq=(credit_amount-qaliq)/month;
+//     for (var index = 1; index < month; index++) {
+//         credit_amount=month-credit_amount
+//         console.log(index,ayliq);
+//     }
+//     console.log(index,ayliq+qaliq);
+// }
+// calculator(1209,12)
+// console.log(ayliqkredit(1200,12));
+
+//17may_1task
+//CheckDegree(95)
+
+
+
+// let arr=[
+//     {name:"Murad",deg:90},    //0
+//     {name:"Ibrahim",deg:61}, //1
+//     {name:"Gulchin",deg:97} //2
+// ]
+// function CheckDegree(deg) {
+//     for (let index = 0; index < array.length; index++) 
+//     {
+//         arr[i]
+//         var txt = "";
+//     if( arr.deg >= 95 && arr.deg < 100){
+//       txt = "yuksek seref";
+//     } 
+//     else if (arr.deg >= 85 && arr.deg <=94){
+//        txt = "seref";
+//     } 
+//     else if (arr.deg >=65 && arr.deg <= 84){
+//        txt = "adi";
+//     } 
+//     else if (arr.deg >= 0 &&arr.deg <= 64){
+//        txt = "kesr";
+//     return txt;
+//     }    
+//     }
+// }
+// CheckDegree(95);
+// console.log(gulcin,"---->",txt);
+
+
+// function result(deg)
+// {
+
+//     var txt = "";
+
+//     if( deg >= 85 && deg < 100){
+//       txt = "excellent";
+//     } else if (deg >= 75 && deg <=85){
+//        txt = "very good ";
+//     } else if ( deg >=65 && deg <= 75){
+//        txt = " good ";
+//     } else if (deg >= 50 && deg <= 65){
+//        txt = "fairly good";
+//     } else if (deg < 50 ){
+//        txt = "fail";
+//     }
+    
+//     return txt;
+  
+// }
+
+        
+// result(95);
+// var degree_result = result(deg);
+
+// document.write(degree_result);
+
+//func var. parametr olaraq 1 array ve 1 callback func qaytarir.
+//func gelen arraydeki ededleri 5 e vursun
+//(parametrden gelen callback func-u ist etmekle)
+
+function Multiplier(arr,callback) {
+
+    let result=[];
+    for (let i = 0; i < arr.length; i++) {
+       result[i]=callback(arr[i])
+    }
+    return result;
+}
+function mycallback(value) {
+    return value*5;
+}
+console.log(Multiplier([1,2,3],mycallback));
