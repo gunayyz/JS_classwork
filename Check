@@ -1,0 +1,55 @@
+let arr=[
+    {name:"Murad",deg:90},    //0
+    {name:"Ibrahim",deg:61}, //1
+    {name:"Gulchin",deg:97} //2
+]
+function CheckDegree(deg) {
+    for (let index = 0; index < array.length; index++) 
+    {
+        arr[i]
+        var txt = "";
+    if( arr.deg >= 95 && arr.deg < 100){
+      txt = "yuksek seref";
+    } 
+    else if (arr.deg >= 85 && arr.deg <=94){
+       txt = "seref";
+    } 
+    else if (arr.deg >=65 && arr.deg <= 84){
+       txt = "adi";
+    } 
+    else if (arr.deg >= 0 &&arr.deg <= 64){
+       txt = "kesr";
+    return txt;
+    }    
+    }
+}
+CheckDegree(95);
+console.log(gulcin,"---->",txt);
+
+
+function result(deg)
+{
+
+    var txt = "";
+
+    if( deg >= 85 && deg < 100){
+      txt = "excellent";
+    } else if (deg >= 75 && deg <=85){
+       txt = "very good ";
+    } else if ( deg >=65 && deg <= 75){
+       txt = " good ";
+    } else if (deg >= 50 && deg <= 65){
+       txt = "fairly good";
+    } else if (deg < 50 ){
+       txt = "fail";
+    }
+    
+    return txt;
+  
+}
+
+        
+result(95);
+var degree_result = result(deg);
+
+document.write(degree_result);
